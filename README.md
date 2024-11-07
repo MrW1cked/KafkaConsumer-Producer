@@ -1,54 +1,54 @@
 
-# Kafka Demo Project
+# 🚀 Kafka Demo Project
 
 Welcome to the Kafka Demo Project! This guide walks you through the project setup and usage.
 
 ---
 
-## Project Overview
+## 🛠 Project Overview
 
 This project demonstrates:
-- **Kafka Producer**: Publishes messages to a Kafka topic.
-- **Kafka Consumer**: Listens for messages on a Kafka topic.
-- **CLI Menu**: Command-line interface for selecting produce or consume options.
+- **📤 Kafka Producer**: Publishes messages to a Kafka topic.
+- **📥 Kafka Consumer**: Listens for messages on a Kafka topic.
+- **🎮 CLI Menu**: Command-line interface for selecting produce or consume options.
 
 The setup uses Docker containers for easy Kafka and Zookeeper deployment.
 
 ---
 
-## Prerequisites
+## 🔧 Prerequisites
 
-- Docker
-- Docker Compose
+- 🐳 Docker
+- 📦 Docker Compose
 
 ---
 
-## Setup and Run with Docker
+## 📦 Setup and Run with Docker
 
-1. **Clone the Repository**
-   ```
-   git clone https://github.com/yourusername/kafka-demo-project.git
+1. **📂 Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/kafka-demo-project.git
    cd kafka-demo-project
    ```
 
-2. **Start Services**
-   ```
+2. **🐳 Start Services**
+   ```bash
    docker-compose up -d
    ```
 
-3. **Verify Services**
-   ```
+3. **🔍 Verify Services**
+   ```bash
    docker-compose ps
    ```
 
-4. **Check Topic Initialization**
-   ```
+4. **📜 Check Topic Initialization**
+   ```bash
    docker-compose logs init-kafka
    ```
 
 ---
 
-## Project Structure
+## 📜 Project Structure
 
 - `MessageProducer` (KafkaProducerPort): Produces messages.
 - `MainMenu` (MainMenuPort): CLI menu for producer and consumer.
@@ -56,31 +56,31 @@ The setup uses Docker containers for easy Kafka and Zookeeper deployment.
 
 ---
 
-## Usage
+## 💻 Usage
 
-1. **Run CLI**: Start the Java application
+1. **🎮 Run CLI**: Start the Java application.
 
-2. **Menu Options**:
-   - **1 - Produce a message**: Enter message details for Kafka.
-   - **2 - Consume a message**: Display incoming messages.
-   - **0 - Exit**: Quit the application.
+2. **📋 Menu Options**:
+   - **1 - 📤 Produce a message**: Enter message details for Kafka.
+   - **2 - 📥 Consume a message**: Display incoming messages.
+   - **0 - 🚪 Exit**: Quit the application.
 
 ---
 
-## Important Kafka Topics
+## 📌 Important Kafka Topics
 
 - `user-events`: Stores user-related events with single partition and replication.
 
 ---
 
-## Environment Configuration
+## ⚙️ Environment Configuration
 
-- **Zookeeper**: Manages Kafka brokers on port 2181.
-- **Kafka Broker**: Port 9092 for localhost, 29092 for inter-container communication.
-- **Topic Initializer**: Creates `user-events` topic on startup.
+- **🦉 Zookeeper**: Manages Kafka brokers on port 2181.
+- **🗃️ Kafka Broker**: Port 9092 for localhost, 29092 for inter-container communication.
+- **📝 Topic Initializer**: Creates `user-events` topic on startup.
 
 ---
 
-## License
+## 📝 License
 
 This project is open source and licensed under the MIT License.
