@@ -1,5 +1,5 @@
 
-# 🚀 Kafka Demo Project
+# 🚀 SpringBoot Kafka Producer and Consumer Project
 
 Welcome to the Kafka Demo Project! This guide walks you through the project setup and usage.
 
