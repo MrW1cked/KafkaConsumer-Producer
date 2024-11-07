@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: kafkaDemo
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic: user-events
+    consumer:
+      group-id: user-events-consumer
+      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      properties:
+        spring:
+          deserializer:
+            value:
+              delegate:
+                class: org.springframework.kafka.support.serializer.JsonDeserializer
+          json:
+            value:
+              default:
+                type: com.nunosousa.kafkaDemo.event.UserEvent
